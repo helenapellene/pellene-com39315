@@ -1,0 +1,428 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+
+/**navbar index*/
+header p {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .logo{
+    padding: 1.5rem;
+    }
+    
+  .navbar-container {
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    height: 1000%;
+    width:150px;
+    position: fixed;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    gap:3rem;
+  
+  }
+  
+ .navbar li a{
+    text-decoration: none;
+    color: #000000;
+ }
+  
+  .navbar a:hover {
+  color:grey;
+  }
+  
+
+/*******main index*******/
+
+body{
+    background-color: black;
+    font-family: 'Quantico', sans-serif;
+  }
+
+  h1{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    padding:1.5rem;
+  }
+
+  .container-grid{
+    background-color: black;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "item-1 item-2"
+    "item-1 item-2"
+    "item-1 item-2"
+    ;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-1{
+    grid-area: item-1;
+    margin-top: 200px;
+    margin-left:200px;
+    justify-content: center;
+    text-align: center;
+}   
+
+.item-2{
+    grid-area: item-2;
+}
+
+div{
+    margin-top: 2rem; /* ajusta el valor del margen según sea necesario */
+}
+
+  .btn-main{
+    padding: 1rem 2rem; /* ajusta el valor del relleno según sea necesario */
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #dfdfdf;
+    border-radius: 10%;
+
+  }
+
+
+  span{
+    color:whitesmoke;
+  }
+  
+  .img-main {
+    max-width: 70%;
+    height: auto;
+    left: auto;
+    overflow: hidden;
+    
+  }
+
+  
+  .image-container img {
+  width: 60px;
+  margin: 10px;
+  }
+
+  /*footer index*/
+
+  
+
+  /**clothing*/
+header{
+    color:black;
+}
+
+.container-header{
+    display: flex;
+     justify-content:space-between; /*movimiento horizontal en row*/
+     padding-right: 20px;
+     padding-left: 20px;
+ }
+ 
+  .nav-bar-sections {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    }
+  
+  .nav-bar-sections li a{
+    color:white;
+    text-decoration: none;
+    list-style: none;
+    padding:2rem;
+  }
+  
+  .nav-bar-sections a:hover {
+    color:grey;
+    }
+  
+  
+.header-img {
+  margin-right: 10px;
+  width: 40%;
+  padding:0;
+  }
+  
+
+  /**/
+  h2{
+    color:#ccc;
+    text-align: center;
+  }
+  /**/
+
+  .container-clot{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    align-items:center; 
+    row-gap: 20px;
+  }
+  
+  .img-cl{
+    max-width: 70%; 
+    height:auto;
+    padding: 0.5em;
+  }
+  
+
+  .ber-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  
+  .img-ber {
+    max-width: 70%;
+    height: auto;
+    padding: 0.5em;
+  }
+  
+  
+  /**jeans*/
+  
+  .jeans-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-jeans{
+    max-width: 70%;
+    height: auto;
+    padding: 0.5em;
+  }
+  
+  .catalogo{
+    display: block;
+    margin-top:20px;
+    color:gray;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .catalogo:hover{
+    color:white;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.4rem 1.5rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #dfdfdf;
+    border-radius: 10%;
+  }
+
+  /*footwear*/
+  
+  .footwear-cont {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footwear-cont div {
+    margin-right: 20px; 
+  }
+  
+  .footwear-cont div:last-child {
+    margin-right: 0; 
+  }
+  
+  .img-foot {
+    max-width: 200px; 
+    height: auto; 
+  }
+  
+  .footwear-cont p {
+    text-align: center;
+    margin-top: 50px;
+    color:white;
+  }
+  
+  
+  /*FOOTER*/
+  .footer-cont{
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;  
+    height:120px;
+    overflow: hidden;
+  }
+  
+  
+  .footer-icons-section {
+    display: flex;
+  }
+  
+  .footer-icons-section a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    justify-content: center;  
+    
+  }
+  
+  
+  .footer-p {
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  
+  /*como comprar*/
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0.2rem;
+  }
+  
+  .compra-box {
+    border: white;
+    border-radius: 2px;
+    text-align: center;
+  }
+  
+  .compra-box:first-child {
+    margin-right: 1.5rem;
+  }
+  
+  .compra-box:last-child {
+    margin-left: 1.2rem;
+  }
+  
+  .compra-box h3 {
+    background-color: #ddd;
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+  
+  .compra-box h2 {
+    padding: 1rem;
+  }
+  
+  .compra-box p {
+    padding: 0 4rem 1rem;
+    color:white;
+  }
+  
+  .compra-box ul{
+    color:white;
+    list-style: none;
+  }
+  
+    /*seccion contacto*/
+
+    .contacto{
+  display: flex;
+}
+.encontranos{
+  display:flex;
+}
+  .contacto-cont{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+    font-size: 20px;
+    color:white;
+
+  }
+
+.contacto-cont li i{
+  font-size: 40px;
+  padding: 1rem;
+}
+
+  .form-cont {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaa;
+    overflow: hidden;
+  }
+  
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #aaa;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  #submit {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: black;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  
+  .form-cont {
+    width: 30%;
+    margin-right: 20px;
+  }
+
+.icon-2{
+  max-width:20px
+}
+
