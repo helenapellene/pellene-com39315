@@ -86,11 +86,11 @@ body{
 }
 
 div{
-    margin-top: 2rem; /* ajusta el valor del margen según sea necesario */
+    margin-top: 2rem;
 }
 
   .btn-main{
-    padding: 1rem 2rem; /* ajusta el valor del relleno según sea necesario */
+    padding: 1rem 2rem; 
     color: #000000;
     text-decoration: none;
     font-weight: bold;
@@ -129,7 +129,7 @@ header{
 
 .container-header{
     display: flex;
-     justify-content:space-between; /*movimiento horizontal en row*/
+     justify-content:space-between;
      padding-right: 20px;
      padding-left: 20px;
  }
@@ -195,6 +195,29 @@ header{
       "ber-4 ber-5 ber-6";
   }
   
+  .ber-1{
+    grid-area: ber-1;
+  }
+
+  .ber-2{
+    grid-area: ber-2;
+  }
+
+  .ber-3{
+    grid-area: ber-3;
+  }
+
+  .ber-4{
+    grid-area: ber-4;
+  }
+
+  .ber-5{
+    grid-area: ber-5;
+  }
+
+  .ber-6{
+    grid-area: ber-6;
+  }
   
    .img-ber {
     max-width: 60%;
@@ -303,50 +326,54 @@ header{
   /*como comprar*/
   
   .box-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
     align-items: center;
-    text-align: center;
-    padding: 3rem 0.2rem;
+    grid-template-areas: 
+      "box-1 box-2 box-3"
+      "box-1 box-2 box-3";
   }
   
-  .compra-box {
+  .box-1{
+    grid-area: box-1;
+
+  }
+
+  .box-2{
+    grid-area: box-2;
+  }
+
+  .box-3{
+    grid-area: box-3;
+  }
+
+  .box-1, .box-2, .box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: white;
-    border-radius: 2px;
+    border-radius: 5px;
     text-align: center;
-  }
-  
-  .compra-box:first-child {
-    margin-right: 1.5rem;
-  }
-  
-  .compra-box:last-child {
-    margin-left: 1.2rem;
-  }
-  
-  .compra-box h3 {
     background-color: #ddd;
     font-size: 1.05rem;
     padding: 1rem;
+    height: 300px; /* ajusta la altura según tus necesidades */
   }
   
-  .compra-box h2 {
-    padding: 1rem;
+  .box-1 i, .box-2 i, .box-3 i {
+    font-size: 3rem; /* ajusta el tamaño según tus necesidades */
+    margin-bottom: 1rem;
   }
   
-  .compra-box p {
-    padding: 0 4rem 1rem;
-    color:white;
-  }
-  
-  .compra-box ul{
-    color:white;
-    list-style: none;
-  }
-  
+
     /*seccion contacto*/
 
-    .contacto{
+.contacto{
   display: flex;
 }
 .encontranos{
@@ -435,3 +462,12 @@ header{
   max-width:20px
 }
 
+button {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #dfdfdf;
+  border-radius: 10%;
+}
