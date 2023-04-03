@@ -215,7 +215,7 @@ header{
     grid-area: ber-6;
   }
   
-   .img-ber {
+  .img-ber {
     max-width: 60%;
     height: auto;
     padding: 0.5em;
@@ -287,23 +287,7 @@ header{
   }
   
   
-  /*FOOTER*/
-  .footer-cont{
-    width: 100%;
-    background-color: #f2f2f2;
-    justify-content: center;  
-    height:120px;
-    overflow: hidden;
-  }
   
-  li{
-    display:list-item;
-    text-align: center;
-  }
-  
-i{
-    color: #000000;
-  }
   
   .img-logo{
     max-width: 100px;
@@ -369,4 +353,24 @@ i{
 
 .icon-2{
   max-width:30px
+}
+
+
+/*FOOTER*/
+footer{
+  background-color: #f2f2f2;
+  justify-content: center;
+  overflow: hidden;
+}
+
+footer ul{
+  list-style: none;
+}
+
+i{
+  color: #000000;
+}
+
+.img-logo{
+  max-width: 100px;
 }
