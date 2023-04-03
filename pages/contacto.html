@@ -32,112 +32,136 @@
   </header>
 
     <main> 
-      <section class="encontranos">
-        <div class="container">
-          <div class="row">
-          <h2 class="display-7 fw-bold text-center">Encontranos en</h2>
-          <div class="col-lg-4">
-            <div class="content mx-auto  align-self-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14117.79426505601!2d-64.2584026!3d-27.7959604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53492e780e83%3A0xf3b4042d3113cf57!2sBlackswan%20Showroom!5e0!3m2!1sen!2sar!4v1678308738627!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-          </div>
-        </div>
-        <div class="col-lg-6">
-            <ul class="align-self-center">
-                <li class="d-flex mb-4 text-white">
-                    <img src="../assets/img/Place Marker.png" class="icon-2">Pasaje Ollantay 617, Santiago del Estero
-                </li>
-                <li class="d-flex mb-4 text-white">
-                    <img src="../assets/img/Calendar.png" class="icon-2"> Lunes a Sabados
-                </li>
-                <li class="d-flex mb-4 text-white">
-                    <img src="../assets/img/Clock.png" class="icon-2"> 18.00 a 21.30
-                </li>
-            </ul>
-          </div>
-        </div> 
-        </div>
-      </section>
-
-
-      <!-- formulario -->
-      <section class="contacto">
-        <div class="container text-center">
-            <div class="row align-items-start">
-              <h2 class="display-7 fw-bold text-center">Te interesa saber más? Dejanos tu mensaje</h2>
-              <div class="container col-6 text-center">
-                <form>
-                  <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre completo</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Jose Perez" required>
+      <h2 class="fw-bold text-center">CONTACTANOS</h2>
+      <div class="container my-4 px-3">
+        <div class="row gx-5">
+            <!-- formulario -->
+            <section class="col-lg-6 col-12">
+              <form class="row justify-content-center">
+                  <div class="col-lg-8 col-10 mb-3 p-0">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
                   </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="joseperez@gmail.com" required>
+                  <div class="col-lg-8 col-10 mb-3 p-0">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
                   </div>
-                  <div class="mb-3">
-                    <label for="pregunta" class="form-label">¿Dónde oíste sobre nosotros?</label>
-                    <div>
+                  <div class="col-lg-8 col-10 mb-3 p-0">
+                    <label for="pregunta" class="form-label text-white">¿Dónde oíste sobre nosotros?</label>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="opcion" id="twitter" value="twitter" required>
-                        <label class="form-check-label" for="twitter">
+                        <label class="form-check-label text-white" for="twitter">
                           Twitter
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="opcion" id="facebook" value="facebook">
-                        <label class="form-check-label" for="facebook">
-                          Facebook
-                        </label>
+                            <input class="form-check-input" type="radio" name="opcion" id="facebook" value="facebook">
+                            <label class="form-check-label text-white" for="facebook">
+                              Facebook
+                            </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="opcion" id="instagram" value="instagram">
-                        <label class="form-check-label" for="instagram">
-                          Instagram
-                        </label>
+                            <input class="form-check-input" type="radio" name="opcion" id="instagram" value="instagram">
+                            <label class="form-check-label text-white" for="instagram">
+                              Instagram
+                            </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="opcion" id="otro" value="otro">
-                        <label class="form-check-label" for="otro">
-                          Otro
-                        </label>
+                            <input class="form-check-input" type="radio" name="opcion" id="otro" value="otro">
+                            <label class="form-check-label text-white" for="otro">
+                              Otro
+                            </label>
                       </div>
+                      <div class="col-lg-8 col-10 mb-3 p-0">
+                        <textarea placeholder="Dejanos tu mensaje" class="form-control-sm col-12 text-area" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">ENVIAR</button>
+              </form>
+            </section>
+            <!-- redsociales -->
+            <section class="col-lg-6 col-12">
+              <div class="row justify-content-center">
+                <figure>
+                  <a class="row justify-content-center" href="" target="_blank">
+                    <i class="col-1 m-2 fa fa-instagram text-white"></i>
+                    <figcaption class="col-sm-5 col-8 text-white"> INSTAGRAM <br> @blackswanshowroom</figcaption>
+                  </a>
+                </figure>
+                <figure>
+                  <a class="row justify-content-center" href="" target="_blank">
+                    <i class="col-1 m-2 fa fa-whatsapp text-white"></i>
+                    <figcaption class="col-sm-5 col-8 text-white"> WHATSAPP <br> +54 385516445</figcaption>
+                  </a>
+                </figure>
+                <figure>
+                  <a class="row justify-content-center" href="" target="_blank">
+                    <i class="col-1 m-2 fa fa-facebook text-white">
+                    </i>
+                    <figcaption class="col-sm-5 col-8 text-white"> FACEBOOK <br> BlackSwan Showroom</figcaption>
+                  </a>
+                </figure>
+              </div>
+
+            </section>
+            
+            <!-- ubicacion y contacto -->
+                <h2 class="display-7 fw-bold text-center">ENCONTRANOS EN</h2>
+                <div class="container my-4 px-3">
+                  <div class="row gx-5">
+                    <section class="col-lg-6 col-12">
+                      <div class="row justify-content-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14117.79426505601!2d-64.2584026!3d-27.7959604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53492e780e83%3A0xf3b4042d3113cf57!2sBlackswan%20Showroom!5e0!3m2!1sen!2sar!4v1678308738627!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+                    </section>
+                  <div class="col-lg-6 col-12">
+                      <ul>
+                          <li class="d-flex mb-4 text-white">
+                              <img src="../assets/img/Place Marker.png" class="icon-2">Pasaje Ollantay 617, Santiago del Estero
+                          </li>
+                          <li class="d-flex mb-4 text-white">
+                              <img src="../assets/img/Calendar.png" class="icon-2"> Lunes a Sabados
+                          </li>
+                          <li class="d-flex mb-4 text-white">
+                              <img src="../assets/img/Clock.png" class="icon-2"> 18.00 a 21.30
+                          </li>
+                      </ul>
                     </div>
+                  </div> 
                   </div>
-                  <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-              </div>     
+                </section>
             </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
 
 
 
     </main>
 
     <footer class="footer-cont">
+      <div>
+        <!-- logo -->
+        <div class="row justify-content-center">
+          <img class="img-logo" src="../assets/img/logobs.png" alt="LOGO BLACKSWAN">
+        </div>
+        <ul class="row justify-content-center my-4 my-sm-5 text-center">
+          <li class="col-2 col-sm-1">
+            <a href="https://www.instagram.com/blackswan.santiago/" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="col-2 col-sm-1">
+            <a href="https://www.instagram.com/blackswan.santiago/" target="_blank">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+          </li>
+          <li class="col-2 col-sm-1">
+            <a href="https://www.facebook.com/blackswanshowroom" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- <footer class="footer-cont">
         <div>
             <img id="logo-img" src="../assets/img/logobs.png" alt="logo" class="logo">
         </div>
@@ -145,8 +169,8 @@
           <a href="https://www.instagram.com/blackswan.santiago/" alt="instagram" target="_blank">
             <i class="fa fa-instagram"></i>
           </a>
-          <a href="https://web.whatsapp.com/" alt="whatsapp" target="_blank">
-            <i class="fa fa-whatsapp"></i>
+          <a href="https://www.instagram.com/blackswan.santiago/" alt="instagram" target="_blank">
+            <i class="fa fa-instagram"></i>
           </a>
           <a href="https://www.facebook.com/blackswanshowroom" alt="facebook" target="_blank">
             <i class="fa fa-facebook"></i>
@@ -156,6 +180,6 @@
           <p>&copy;Copyright 2023, BLACKSWAN</p>
           <p class="my-name">Pagina desarrollada por Helena Pellene</p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
