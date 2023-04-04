@@ -162,7 +162,7 @@ margin: 10px;
 /*******************************************/
 
 
-/**clothing*/
+/**CLOTHING SECTION*/
 header{
   color:black;
 }
@@ -189,7 +189,7 @@ h2{
   padding: 0.5em;
 }
 
-
+/**BERMUDAS SECTION*/ 
 .ber-img-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -232,11 +232,12 @@ h2{
   height: auto;
   padding: 0.5em;
   
+
 }
 
 
 
-/**jeans*/
+/**JEAN SECTION*/
 
 .jeans-img-container{
   display: flex;
@@ -272,7 +273,51 @@ h2{
   border-radius: 10%;
 }
 
-/*footwear*/
+/*FOOTWEAR SECTION*/
+
+.zap-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: 
+    "zap-1 zap-2 zap-3"
+    "zap-4 zap-5 zap-6";
+}
+
+.zap-1{
+  grid-area: zap-1;
+}
+
+.zap-2{
+  grid-area: zap-2;
+}
+
+.zap-3{
+  grid-area: zap-3;
+}
+zap
+.zap-4{
+  grid-area: zap-4;
+}
+
+.zap-5{
+  grid-area: zap-5;
+}
+
+.zap-6{
+  grid-area: zap-6;
+}
+
+.img-zap {
+  max-width: 60%;
+  height: auto;
+  padding: 0.5em;
+  
+}
 
 
 
@@ -350,6 +395,10 @@ max-width:30px
   margin: 0 10px;
 }
 
+
+
+/***************RESPONSIVE PARA INDEX****************************/
+
 @media (max-width:1024px){
 .footer-icons {
   display:flex;
@@ -358,10 +407,6 @@ max-width:30px
   margin-bottom: -200px;
 }
 }
-
-
-
-
 
 
 
@@ -427,3 +472,69 @@ max-width:30px
 }
 
 
+/***************RESPONSIVE PARA CLOTHING****************************/
+
+@media(max-width:768px){
+  .container-clot{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  
+  .img-cl{
+    max-width: 70%; 
+    height:auto;
+    padding: 0.5em;
+  }
+  
+  /**BERMUDAS SECTION*/ 
+  .ber-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+      "ber-1 ber-2 ber-3"
+      "ber-4 ber-5 ber-6";
+  }
+  
+  .img-ber {
+    max-width: 100%;
+    height: auto;
+    padding: 0.5em;
+    
+  
+  }
+  
+  .container-clot{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    align-items:center; 
+    row-gap: 20px;
+  }
+  
+  .img-cl{
+    max-width: 100%; 
+    height:auto;
+    padding: 0.5em;
+  }
+  
+  .jeans-img-container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img-jeans{
+    max-width: 100%;
+    height: auto;
+    padding: 0.5em;
+  }
+ 
+}
