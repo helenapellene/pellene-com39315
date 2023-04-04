@@ -449,7 +449,9 @@ max-width:30px
 
 
 @media(max-width:320px) {
-
+ h1{
+  font-size: 50px;
+ }
   /* navbar */
   nav .menu{
       width: 100%;
@@ -537,4 +539,31 @@ max-width:30px
     padding: 0.5em;
   }
  
+}
+
+@media(max-width:320px){
+
+
+    /**BERMUDAS SECTION*/ 
+    .ber-img-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-items: center;
+      align-items: center;
+      grid-template-areas: 
+        "ber-1 ber-2"
+        "ber-3 ber-4"
+        "ber-5 ber-6";
+    }
+    
+    .img-ber {
+      max-width: 100%;
+      height: auto;
+      
+    
+    }
+    
 }
