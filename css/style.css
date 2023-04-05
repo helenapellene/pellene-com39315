@@ -506,7 +506,7 @@ max-width:30px
   }
   
   .img-ber {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     padding: 0.5em;
     
@@ -523,7 +523,7 @@ max-width:30px
   }
   
   .img-cl{
-    max-width: 100%; 
+    max-width: 80%; 
     height:auto;
     padding: 0.5em;
   }
@@ -534,7 +534,7 @@ max-width:30px
   }
   
   .img-jeans{
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     padding: 0.5em;
   }
@@ -571,7 +571,7 @@ nav label{
     cursor:pointer;
 }
 nav #toggle:checked ~ .menu{
-    height: 30vh;
+    height: 50vh;
 }
 
   .container-clot{
