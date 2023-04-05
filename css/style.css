@@ -552,10 +552,13 @@ max-width:30px
     font-size: 15px;
     margin-right:1.3rem;
   }
+
+
   nav .menu{
     width: 100%;
     height: 0;
     overflow: hidden;
+    
 }
 .menu ul{
     flex-direction: column;
@@ -592,7 +595,7 @@ nav #toggle:checked ~ .menu{
     }
     
     .img-ber {
-      max-width: 100%;
+      max-width: 80%;
       height: auto;
       padding: 0.5em;
     
@@ -604,7 +607,7 @@ nav #toggle:checked ~ .menu{
     }
     
     .img-jeans{
-      max-width: 100%;
+      max-width: 80%;
       height: auto;
       padding: 0.5em;
 }
