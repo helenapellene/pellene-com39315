@@ -587,23 +587,26 @@ nav #toggle:checked ~ .menu{
 
     /**BERMUDAS SECTION*/ 
     .ber-img-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      justify-items: center;
-      align-items: center;
-      grid-template-areas: 
-        "ber-1 ber-2"
-        "ber-3 ber-4"
-        "ber-5 ber-6";
+      display: flex;
+      flex-direction: column;
     }
     
     .img-ber {
-      max-width: 90%;
+      max-width: 100%;
       height: auto;
+      padding: 0.5em;
     
     }
     
+    .jeans-img-container{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .img-jeans{
+      max-width: 100%;
+      height: auto;
+      padding: 0.5em;
+}
+  
 }
